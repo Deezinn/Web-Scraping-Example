@@ -1,4 +1,4 @@
-# Scrapy settings for scraping project
+# Scrapy settings for tutorial project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,16 +7,16 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "scraping"
+BOT_NAME = "tutorial"
 
-SPIDER_MODULES = ["scraping.spiders"]
-NEWSPIDER_MODULE = "scraping.spiders"
+SPIDER_MODULES = ["tutorial.spiders"]
+NEWSPIDER_MODULE = "tutorial.spiders"
 
 ADDONS = {}
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "scraping (+http://www.yourdomain.com)"
+#USER_AGENT = "tutorial (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -41,13 +41,13 @@ DOWNLOAD_DELAY = 1
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "scraping.middlewares.ScrapingSpiderMiddleware": 543,
+#    "tutorial.middlewares.TutorialSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "scraping.middlewares.ScrapingDownloaderMiddleware": 543,
+#    "tutorial.middlewares.TutorialDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -59,7 +59,7 @@ DOWNLOAD_DELAY = 1
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "scraping.pipelines.ScrapingPipeline": 300,
+#    "tutorial.pipelines.TutorialPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
